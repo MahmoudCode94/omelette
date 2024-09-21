@@ -1,0 +1,186 @@
+body{
+    background-color: hsl(30, 54%, 90%);
+    margin: 8% 0%;
+}
+
+hr{
+    width: 100%;
+}
+.high40{
+    line-height: 40px;
+}
+
+.br30{
+    color: hsl(14, 45%, 36%);
+    font-size: 30px;
+}
+
+.radius20{
+    border-radius: 20px;
+}
+
+.fontserif{
+    font-family: YoungSerif-Regular;
+}
+
+.size20{
+    font-size: 20px;
+}
+.size22{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+*{
+    font-family: Outfit;
+}
+
+@font-face {
+    font-family: YoungSerif-Regular ;
+    src: url(fonts/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url(fonts/Outfit-VariableFont_wght.ttf);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 800px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: hsl(0, 0%, 100%);
+    overflow: hidden;
+    padding: 45px;
+    box-shadow:0px 0px 8px 0px hsl(0deg 0% 60.39%);
+}
+.c-2{
+    padding: 0%;
+}
+
+img{
+    width: 100%;
+}
+
+.h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: hsl(24, 5%, 18%);
+}
+
+.prep{
+    background-color: hsl(330, 100%, 98%);
+    padding: 25px;
+    color: hsl(332, 51%, 32%);
+}
+
+ul{
+    list-style-position: outside;
+    padding-left: 35px;
+    text-indent: 22px;
+color: hsl(30, 10%, 34%);
+}
+
+ul li::marker{
+    font-size: 14px;
+}
+
+.ul-1 li::marker{
+    font-size: 14px;
+    color: hsl(332, 51%, 32%);
+}
+
+.ul-2 li::marker{
+    font-size: 14px;
+    color: hsl(14, 45%, 36%);
+}
+
+ol {
+    list-style-position: outside;
+}
+
+ol li {
+    text-indent: 2px;
+    padding-left: 20px;
+}   
+
+ol li::marker{
+    font-size: 20px;
+    font-weight: 600;
+    color: hsl(14, 45%, 36%);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    padding: 10px;
+    border: none;
+}
+
+tr:not(:last-child) td, 
+tr:not(:last-child) th {
+    border-bottom: .1px solid hsl(0deg 0% 60.39%);
+}
+
+td:not(:last-child) {
+    border-right: none;
+}
+
+@media (min-width:320px) and (max-width:480px){
+    body{
+        margin: 0% 0%;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        position: absolute;
+    }
+    .container{
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .c-2{
+        padding: 0% 5%;
+    }
+    .h1{
+    font-size: 40px;
+    line-height: 100%;
+    }
+    img{
+        margin: 0px;
+    }
+    .high40{
+        line-height: 40px;
+    }
+    
+    .br30{
+        color: hsl(14, 45%, 36%);
+        font-size: 30px;
+    }
+    
+    .radius20{
+        border-radius: 0px;
+    }
+    
+    .fontserif{
+        font-family: YoungSerif-Regular;
+    }
+    
+    .size20{
+        font-size: 20px;
+    }
+    .size22{
+        font-size: 22px;
+        font-weight: 600;
+    }
+}
